@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F2F2F2;
+  }
+  
+  a {
+    color: #FD0102;
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .navbar {
+    background-color: #000000;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .navbar h2 {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #FD0102;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-left: 20px;
+  }
+  
+  .navbar ul li a {
+    font-size: 18px;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #FD0102;
+  }
+  
+  .albums-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 100px;
+  }
+  
+  .list {
+    background-color: #52ce8c;
+    color: rgb(57, 41, 201);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .list:hover {
+    transform: translateY(-5px);
+  }
+  
+  .list h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .list p {
+    margin-bottom: 20px;
+  }
+  
+  .list .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .update-btn,
+  .delete-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .update-btn {
+    background-color: #3ABE8E;
+    color: white;
+    border: none;
+  }
+  
+  .update-btn:hover {
+    background-color: #218A62;
+  }
+  
+  .delete-btn {
+    background-color: #E74C3C;
+    color: white;
+    border: none;
+  }
+  
+  .delete-btn:hover {
+    background-color: #B03529;
+  }
+  
+  .addalbum-container {
+    padding-top: 100px;
+  }
+  
+  .addalbum-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .addalbum-form label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .addalbum-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .addalbum-form button {
+    background-color: #FD0102;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .addalbum-form button:hover {
+    background-color: #C60306;
+  }
+  
